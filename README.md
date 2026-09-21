@@ -28,6 +28,22 @@ What I'm most interested in next: applied ML and data science roles, and backend
 
 ## Selected work
 
+### [ListForge](https://github.com/vrosi21/list-forge) &nbsp;·&nbsp; LLM pipeline &nbsp;·&nbsp; trust boundaries
+
+Product copy generation for multi-brand e-commerce. A language model drafts the listing, deterministic tested code decides whether that draft is approved, sent to a reviewer, or failed. Nothing publishes on the model's say-so.
+
+- Every claim is checked against the product's own catalogue row: unsupported numbers, materials and origins, plus per-brand banned health claims, each finding recorded with its field and character span
+- Two retry loops kept separate. Transport backs off with full jitter and never retries a client error; content re-asks the model with the exact validation errors
+- Caches generations rather than verdicts, so tightening a rule re-grades earlier output at no model cost
+- 14 of 14 planted violations caught, 0 of 6 clean cases flagged, behind 281 backend and 139 frontend tests in CI
+
+![Python](https://img.shields.io/badge/Python%203.13-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Pydantic](https://img.shields.io/badge/Pydantic%20v2-0F172A?style=flat-square)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+
 ### [Clarity](https://github.com/vrosi21/Clarity) &nbsp;·&nbsp; reinforcement learning + full-stack
 
 A Kanban board with an embedded, from-scratch RL agent that assigns tickets based on workload, skill profile, and historical performance, instead of whoever grabs them first.
