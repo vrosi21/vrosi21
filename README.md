@@ -3,6 +3,7 @@
 <img alt="Kemal Sivro, Software Developer, Data Science & AI" src="assets/header.png" width="100%">
 
 <p align="center">
+  <a href="https://vrosi21.pages.dev"><img alt="Portfolio and CV" src="https://img.shields.io/badge/Portfolio%20%26%20CV-vrosi21.pages.dev-1F5FBF?style=flat-square&logo=cloudflarepages&logoColor=white"></a>
   <a href="https://linkedin.com/in/kemal-sivro"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-kemal--sivro-0A66C2?style=flat-square&logo=linkedin&logoColor=white"></a>
   <a href="mailto:kemalsivro@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-kemalsivro%40gmail.com-334155?style=flat-square&logo=gmail&logoColor=white"></a>
   <img alt="Location" src="https://img.shields.io/badge/Zenica-Bosnia%20%26%20Herzegovina-475569?style=flat-square">
@@ -27,6 +28,38 @@ What I'm most interested in next: applied ML and data science roles, and backend
 ---
 
 ## Selected work
+
+### [DSAI Vault](https://dsai3.pages.dev) &nbsp;·&nbsp; full-stack platform &nbsp;·&nbsp; built and run solo
+
+Study site for the Data Science and AI programme at ETF Sarajevo: lecture notes, spaced-repetition flashcards, practice problems, past papers and exam plans, with LaTeX maths throughout. 39 courses, Google sign-in, progress saved per student. Students apply to become course educators and write content with an [AI-assisted toolkit](https://github.com/vrosi21/dsai-educator-kit) or an in-browser editor.
+
+- Content as code: Markdown/YAML checked against Pydantic schemas, with errors that name the exact file and line, and every formula checked with KaTeX
+- Web editor forms generated from the same schemas the validator uses. YAML edits rewrite only the changed lines, so comments and layout survive
+- Git-like versioning: SHA-256 content-addressed storage, line-by-line diff history with one-click restore, and a command that replays web edits as git commits
+- About 625 automated tests in GitHub Actions CI/CD, zero-downtime deploys to one Linux server, CSP, rate limits and role-based access
+
+![Python](https://img.shields.io/badge/Python%203.13-3776AB?style=flat-square&logo=python&logoColor=white)
+![Django](https://img.shields.io/badge/Django%206-092E20?style=flat-square&logo=django&logoColor=white)
+![Pydantic](https://img.shields.io/badge/Pydantic-0F172A?style=flat-square)
+![Alpine.js](https://img.shields.io/badge/Alpine.js-8BC0D0?style=flat-square&logo=alpinedotjs&logoColor=black)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
+
+### [Prismo Cloud](https://github.com/vrosi21/prismo-cloud) &nbsp;·&nbsp; self-hosted media cloud &nbsp;·&nbsp; Go
+
+My own Imgur/Giphy for screenshots, recordings, GIFs and stickers, on my VPS behind Cloudflare. Captures upload from the desktop, get thumbnails, MP4 and GIF versions, and are shared by private link or with specific Google accounts.
+
+- Stateless Go API; clients upload straight to content-addressed S3 object storage (Garage) through presigned URLs
+- PostgreSQL job queue (SKIP LOCKED + LISTEN/NOTIFY) feeding ffmpeg workers, so there is no separate queue service to run
+- Windows desktop helper (Win32 + WebView2) with a hotkey picker that pastes any sticker into any chat app
+- In-browser sticker maker that removes backgrounds on the device with U²-Net on ONNX Runtime Web
+
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![ffmpeg](https://img.shields.io/badge/ffmpeg-007808?style=flat-square&logo=ffmpeg&logoColor=white)
+![React](https://img.shields.io/badge/React%2019-61DAFB?style=flat-square&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare%20Pages-F38020?style=flat-square&logo=cloudflare&logoColor=white)
 
 ### [ListForge](https://github.com/vrosi21/list-forge) &nbsp;·&nbsp; LLM pipeline &nbsp;·&nbsp; trust boundaries
 
@@ -89,31 +122,6 @@ Public transit app for Zenica, built by the ZeForge Zenica community and live at
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![JSON Schema](https://img.shields.io/badge/JSON%20Schema-0F172A?style=flat-square)
 
-### [Cartel Detection in Public Procurement](https://github.com/uoloki/Anomaly-Detection-in-Procurement) &nbsp;·&nbsp; applied ML research
-
-Detecting bid-rigging cartels in public procurement data using machine learning and network analysis, written up as a full research report.
-
-- Random Forest reaching **89.0% test ROC AUC** on the GTI Labelled Cartel Dataset
-- Bidder-level validation rather than random splits, so the score reflects generalisation to genuinely unseen bidders
-- Includes the network-analysis branch that *didn't* work, reported as a negative result alongside feature importance and reproducibility appendices
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
-
-### [Trend Breaks with Semantic Signals](https://github.com/uoloki/Detecting-Trend-Breaks-with-Semantic-Signals) &nbsp;·&nbsp; NLP + time series
-
-Short-term S&P 500 movement prediction that fuses engineered technical indicators with sentiment extracted from financial posts on X.
-
-- Deep learning architectures over a combined price-and-sentiment feature space
-- Sentence-transformer embeddings for the semantic signal, with the data-quality and processing pipeline documented end to end
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![Hugging Face](https://img.shields.io/badge/sentence--transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
-
 ---
 
 ## Also worth a look
@@ -122,6 +130,10 @@ Short-term S&P 500 movement prediction that fuses engineered technical indicator
 | :--- | :--- | :--- |
 | **[vehicle-data-lab](https://github.com/vrosi21/vehicle-data-lab)** | Full ML pipeline predicting car prices from 3,045 OLX.ba listings: scraping, cleaning, EDA, modelling. RandomForestRegressor at ~9,985 BAM MAE; GradientBoostingClassifier at 67% accuracy with SMOTE. | Python · scikit-learn · Selenium |
 | **[Path-Planning-Visualiser](https://github.com/vrosi21/Path-Planning-Visualiser)** | Interactive simulator showing how six search algorithms (BFS, Dijkstra, A\* and Weighted A\* among them) explore grids and find paths through weighted terrain. | Python · Pygame · PyQt6 |
+| **[Cartel Detection in Public Procurement](https://github.com/uoloki/Anomaly-Detection-in-Procurement)** | Random Forest detecting bid-rigging cartels at **89.0% test ROC AUC** on the GTI Labelled Cartel Dataset, validated at bidder level so the score reflects unseen firms. The network-analysis branch is reported as a negative result. | Python · scikit-learn · Pandas |
+| **[Trend Breaks with Semantic Signals](https://github.com/uoloki/Detecting-Trend-Breaks-with-Semantic-Signals)** | Short-term S&P 500 movement prediction fusing technical indicators with sentiment from financial posts, using sentence-transformer embeddings. | Python · PyTorch · sentence-transformers |
+| **[TV-Image-Denoising](https://github.com/vrosi21/TV-Image-Denoising)** | Cross-platform C++20 desktop app comparing gradient descent (Armijo backtracking) with a Newton-type lagged diffusivity solver for total-variation denoising. Convergence and lambda studies, installers for Windows, macOS and Linux, written paper. | C++20 · CMake · natID |
+| **[TSP-Solver](https://github.com/vrosi21/TSP-Solver)** | Team project: interactive Travelling Salesman solver on a map of the former Yugoslavia with Nearest Neighbour + 2-opt, Simulated Annealing and a Genetic Algorithm, stepping forward and back through every decision. | C++17 · CMake · natID |
 
 ## Open source
 
@@ -137,6 +149,7 @@ I contribute to [**ZeForge Zenica**](https://github.com/zeforgezenica), a local 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square)
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 
 **AI / ML** &nbsp;
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
@@ -152,6 +165,7 @@ I contribute to [**ZeForge Zenica**](https://github.com/zeforgezenica), a local 
 **Backend** &nbsp;
 ![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
@@ -168,6 +182,8 @@ I contribute to [**ZeForge Zenica**](https://github.com/zeforgezenica), a local 
 **Platform & DevOps** &nbsp;
 ![Azure DevOps](https://img.shields.io/badge/Azure%20DevOps-0078D7?style=flat-square)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![Dynamics 365](https://img.shields.io/badge/Dynamics%20365-002050?style=flat-square)
 ![Power Platform](https://img.shields.io/badge/Power%20Platform-742774?style=flat-square)
