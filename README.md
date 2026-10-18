@@ -3,7 +3,7 @@
 <img alt="Kemal Sivro, Software Developer, Data Science & AI" src="assets/header.png" width="100%">
 
 <p align="center">
-  <a href="https://vrosi21.pages.dev"><img alt="Portfolio and CV" src="https://img.shields.io/badge/Portfolio%20%26%20CV-vrosi21.pages.dev-1F5FBF?style=flat-square&logo=cloudflarepages&logoColor=white"></a>
+  <a href="https://portfolio.kemalsivro.workers.dev"><img alt="Portfolio and CV" src="https://img.shields.io/badge/Portfolio%20%26%20CV-portfolio.kemalsivro.workers.dev-A0522D?style=flat-square&logo=cloudflare&logoColor=white"></a>
   <a href="https://linkedin.com/in/kemal-sivro"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-kemal--sivro-0A66C2?style=flat-square&logo=linkedin&logoColor=white"></a>
   <a href="mailto:kemalsivro@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-kemalsivro%40gmail.com-334155?style=flat-square&logo=gmail&logoColor=white"></a>
   <img alt="Location" src="https://img.shields.io/badge/Zenica-Bosnia%20%26%20Herzegovina-475569?style=flat-square">
