@@ -77,7 +77,7 @@ Product copy generation for multi-brand e-commerce. A language model drafts the 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
-### [Clarity](https://github.com/vrosi21/Clarity) &nbsp;·&nbsp; reinforcement learning + full-stack
+### [Clarity](https://github.com/vrosi21/Clarity) &nbsp;·&nbsp; reinforcement learning + full-stack &nbsp;·&nbsp; team of two
 
 A Kanban board with an embedded, from-scratch RL agent that assigns tickets based on workload, skill profile, and historical performance, instead of whoever grabs them first.
 
@@ -130,8 +130,8 @@ Public transit app for Zenica, built by the ZeForge Zenica community and live at
 | :--- | :--- | :--- |
 | **[vehicle-data-lab](https://github.com/vrosi21/vehicle-data-lab)** | Full ML pipeline predicting car prices from 3,045 OLX.ba listings: scraping, cleaning, EDA, modelling. RandomForestRegressor at ~9,985 BAM MAE; GradientBoostingClassifier at 67% accuracy with SMOTE. | Python · scikit-learn · Selenium |
 | **[Path-Planning-Visualiser](https://github.com/vrosi21/Path-Planning-Visualiser)** | Interactive simulator showing how six search algorithms (BFS, Dijkstra, A\* and Weighted A\* among them) explore grids and find paths through weighted terrain. | Python · Pygame · PyQt6 |
-| **[Cartel Detection in Public Procurement](https://github.com/uoloki/Anomaly-Detection-in-Procurement)** | Random Forest detecting bid-rigging cartels at **89.0% test ROC AUC** on the GTI Labelled Cartel Dataset, validated at bidder level so the score reflects unseen firms. The network-analysis branch is reported as a negative result. | Python · scikit-learn · Pandas |
-| **[Trend Breaks with Semantic Signals](https://github.com/uoloki/Detecting-Trend-Breaks-with-Semantic-Signals)** | Short-term S&P 500 movement prediction fusing technical indicators with sentiment from financial posts, using sentence-transformer embeddings. | Python · PyTorch · sentence-transformers |
+| **[Cartel Detection in Public Procurement](https://github.com/uoloki/Anomaly-Detection-in-Procurement)** | Team project. Random Forest detecting bid-rigging cartels at **89.0% test ROC AUC** on the GTI Labelled Cartel Dataset, validated at bidder level so the score reflects unseen firms. The network-analysis branch is reported as a negative result. | Python · scikit-learn · Pandas |
+| **[Trend Breaks with Semantic Signals](https://github.com/uoloki/Detecting-Trend-Breaks-with-Semantic-Signals)** | Team project. Short-term S&P 500 movement prediction fusing technical indicators with sentiment from financial posts, using sentence-transformer embeddings. | Python · PyTorch · sentence-transformers |
 | **[TV-Image-Denoising](https://github.com/vrosi21/TV-Image-Denoising)** | Cross-platform C++20 desktop app comparing gradient descent (Armijo backtracking) with a Newton-type lagged diffusivity solver for total-variation denoising. Convergence and lambda studies, installers for Windows, macOS and Linux, written paper. | C++20 · CMake · natID |
 | **[TSP-Solver](https://github.com/vrosi21/TSP-Solver)** | Team project: interactive Travelling Salesman solver on a map of the former Yugoslavia with Nearest Neighbour + 2-opt, Simulated Annealing and a Genetic Algorithm, stepping forward and back through every decision. | C++17 · CMake · natID |
 
